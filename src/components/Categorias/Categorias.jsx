@@ -2,7 +2,7 @@ import React from 'react'
 import { CategoriasContainerStyled } from './CategoriesStyles'
 
 import Categoria from './Categoria'
-import { Categories } from '../../data/Categories'
+
 import { useSelector } from 'react-redux' 
 
 const Categorias = () => {

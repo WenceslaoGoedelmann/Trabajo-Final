@@ -2,7 +2,9 @@ import React from "react";
 import {
   LinkUserContainer,
   ModalUserContainer,
+  SaludoUserContainer,
   Triangulo,
+  
 } from "./ModalUserStyles";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -33,14 +35,17 @@ const ModalUser = () => {
           >
             <Triangulo />
             {currentUser ? (
-              <LinkUserContainer
-                onClick={() => {
-                  dispatch(toggleHiddenMenu());
-                  navigate("/user");
-                }}
-              >
-                Informacion
-              </LinkUserContainer>
+              <div>
+                <SaludoUserContainer><span>Hola! </span>{currentUser.nombre}</SaludoUserContainer>
+                <LinkUserContainer
+                  onClick={() => {
+                    dispatch(toggleHiddenMenu());
+                    navigate("/user");
+                  }}
+                >
+                  Informacion
+                </LinkUserContainer>
+              </div>
             ) : (
               <div>
                 <LinkUserContainer

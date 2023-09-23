@@ -16,7 +16,7 @@ import Loader from "../../components/UI/Loader/Loader";
 const Register = () => {
   const dispatch = useDispatch()
   const { state } = useLocation()
-  useRedirect(state?.redirectedFromCheckout ? '/checkout' : '/');
+  useRedirect(state?.redirectedFromCheckout ? '/checkout' : '/verify');
   const navigate = useNavigate();
   return (
     <RegisterWrapper>

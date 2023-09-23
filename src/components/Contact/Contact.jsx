@@ -2,8 +2,7 @@ import React from 'react'
 import {  ContactContainerStyled, ContactInfo, LinksRedes, Redes } from './ContactStyled'
 import { FaEnvelope, FaPhone } from 'react-icons/fa';
 import { Link } from 'react-router-dom'
-import  Instagram  from '../Images/Instagram-icon.png'
-import  Facebook  from '../Images/Facebook-icon.png'
+
 
 const Contact = () => {
   return (

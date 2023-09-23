@@ -24,7 +24,15 @@ export const ModalUserContainer = styled(motion.div)`
     right:65px;
   }
 `;
-
+export const SaludoUserContainer = styled.div`
+color: black;
+margin:5px 0;
+position: relative;
+top:-20px;
+span {
+  color: white;
+}
+`;
 export const LinkUserContainer = styled.div`
 color: white;
 cursor: pointer;

@@ -42,9 +42,9 @@ export const UserContainer = styled.div`
     margin-right: 10px;
     font-size: 15px;
   }
-  @media (max-width: 475px) {
+/*   @media (max-width: 475px) {
     display: none;
-  }
+  } */
 `;
 export const RegisterContainer = styled.div`
   display: flex;

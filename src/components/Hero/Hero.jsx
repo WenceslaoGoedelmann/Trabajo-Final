@@ -1,6 +1,6 @@
 import React from 'react'
 import { HeroContainerImg, HeroContainerStyled, HeroContainerText } from './HeroStyles'
-import  img_Security  from '../Images/img_Security.jpg'
+
 const Hero = () => {
   return (
     <HeroContainerStyled>

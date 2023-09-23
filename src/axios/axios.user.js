@@ -32,3 +32,16 @@ export const loginUser = async (email, password) => {
         return alert(error.response.data.errors[0].msg)
     }
 }
+
+export const verifyUser = async (code, email ) => {
+    try {
+        const response = await axios.patch(`${BASE_URL}/auth/verify`, {
+            code,
+            email
+        })
+        return response.data
+    } catch (error) {
+        console.log({ loginUserError: error })
+        return alert(error.response.data.errors[0].msg)
+    }
+}

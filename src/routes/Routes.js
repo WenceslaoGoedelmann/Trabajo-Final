@@ -8,6 +8,7 @@ import ProtectedRoute from "../components/ProtectedRoute/ProtectedRoute";
 import User from "../pages/User/User";
 import ConfirmedBuy from "../pages/ConfirmedBuy/ConfirmedBuy";
 import PageNotFound from "../pages/PageNotFound/PageNotFound";
+import Verify from "../pages/Verify/Verify";
 
 function Routes() {
   return (
@@ -15,6 +16,7 @@ function Routes() {
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/verify" element={<Verify />} />
       <Route
         path="/checkout"
         element={

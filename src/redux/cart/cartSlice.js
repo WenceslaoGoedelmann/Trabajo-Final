@@ -4,7 +4,7 @@ const {
   removeItemFromCart,
   resetShippingCost,
 } = require('./cart-utils');
-const { SHIPPING_COST, SHIPPING_FREE } = require('../../utils/constants');
+const { SHIPPING_COST} = require('../../utils/constants');
 
 const initialState = {
   cartItems: [],
