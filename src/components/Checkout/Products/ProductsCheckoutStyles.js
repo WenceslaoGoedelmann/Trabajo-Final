@@ -32,6 +32,8 @@ export const ProductsChekoutContainer = styled.div`
 export const ProductsContainer = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 0 10px;
+  
 `;
 
 export const ProductCheckoutContainer = styled.div`
@@ -76,6 +78,7 @@ export const ItemPrecio = styled.div`
 `;
 export const ItemCant = styled.div`
   color: white;
+  margin-right: 3px;
   @media (max-width: 650px) {
         font-size: 13px;
     }

@@ -30,17 +30,9 @@ export const addItemToCart = (cartItems, product) => {
 
   
   export const resetShippingCost = (cartItems, shippingCost) => {
-    const totalPrice = cartItems.reduce(
-      (acc, item) => (acc += item.price * item.quantity ),
-      0
-    );
-    
-/*     if (!cartItems.length) {
+    if (cartItems.length === 1 && cartItems[0].quantity === 1) {
       return 0;
-    }  */
-     if (totalPrice>=1000) {
-      return 0;
-    }   
+    }
     return shippingCost;
   };
   
